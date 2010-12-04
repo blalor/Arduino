@@ -57,7 +57,7 @@ uint16_t UdpClass::sendPacket(const char str[], uint8_t * ip, uint16_t port){
 }
 /* Is data available in rx buffer? Returns 0 if no, number of available bytes if yes. 
  * returned value includes 8 byte UDP header!*/
-int UdpClass::available() {
+unsigned int UdpClass::available() {
   return W5100.getRXReceivedSize(_sock);
 }
 

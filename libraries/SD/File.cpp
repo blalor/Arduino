@@ -41,7 +41,7 @@ int File::read() {
   return SD.file.read();
 }
 
-int File::available() {
+unsigned int File::available() {
   if (SD.c != -1) return 1;
   SD.c = SD.file.read();
   return SD.c != -1;

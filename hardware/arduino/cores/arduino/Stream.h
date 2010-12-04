@@ -26,7 +26,7 @@
 class Stream : public Print
 {
   public:
-    virtual int available() = 0;
+    virtual unsigned int available() = 0;
     virtual int read() = 0;
     
     /*

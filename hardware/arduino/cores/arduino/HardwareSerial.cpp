@@ -223,9 +223,9 @@ void HardwareSerial::end()
   cbi(*_ucsrb, _rxcie);  
 }
 
-int HardwareSerial::available(void)
+unsigned int HardwareSerial::available(void)
 {
-  return (unsigned int)(RX_BUFFER_SIZE + _rx_buffer->head - _rx_buffer->tail) % RX_BUFFER_SIZE;
+  return (RX_BUFFER_SIZE + _rx_buffer->head - _rx_buffer->tail) % RX_BUFFER_SIZE;
 }
 
 int HardwareSerial::peek(void)

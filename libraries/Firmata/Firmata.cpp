@@ -139,7 +139,7 @@ void FirmataClass::setFirmwareNameAndVersion(const char *name, byte major, byte 
 //------------------------------------------------------------------------------
 // Serial Receive Handling
 
-int FirmataClass::available(void)
+unsigned int FirmataClass::available(void)
 {
   return Serial.available();
 }

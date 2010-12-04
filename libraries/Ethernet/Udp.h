@@ -46,7 +46,7 @@ private:
 
 public:
   void begin(uint16_t);				// initialize, start listening on specified port
-  int available();								// has data been received?
+  unsigned int available();								// has data been received?
 
   // C-style buffer-oriented functions
   uint16_t sendPacket(uint8_t *, uint16_t, uint8_t *, uint16_t); //send a packet to specified peer 

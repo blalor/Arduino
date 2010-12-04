@@ -99,7 +99,7 @@ public:
   //void setFirmwareVersion(byte major, byte minor);  // see macro below
     void setFirmwareNameAndVersion(const char *name, byte major, byte minor);
 /* serial receive handling */
-    int available(void);
+    unsigned int available(void);
     void processInput(void);
 /* serial send handling */
 	void sendAnalog(byte pin, int value);

@@ -69,7 +69,7 @@ void Client::write(const uint8_t *buf, size_t size) {
     send(_sock, buf, size);
 }
 
-int Client::available() {
+unsigned int Client::available() {
   if (_sock != MAX_SOCK_NUM)
     return W5100.getRXReceivedSize(_sock);
   return 0;

@@ -62,7 +62,7 @@ class HardwareSerial : public Stream
     void end();
     
     // @todo I think these only need to be declared virtual if HWSerial's going to be extended
-    int available(void);
+    unsigned int available(void);
     int peek(void);
     int peek(uint8_t);
     void remove(uint8_t);
